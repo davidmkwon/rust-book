@@ -1,0 +1,19 @@
+[workspace]
+
+members = [
+    "basics",
+    "minigrep",
+    "modules",
+    "tests",
+    "hello_macro",
+    "hello_macro/hello_macro_derive",
+    "server/",
+]
+
+# can change the standard optimization level for `cargo build`
+[profile.dev]
+opt-level = 1
+
+# can change the standard optimization level for `cargo build --release`
+[profile.release]
+opt-level = 3
